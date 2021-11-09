@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/Direct_Back/Cache_writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/Direct_Back/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/final/Direct_Back/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/final/2Way_Through/2Way_Through.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/final/2Way_Through/Cache.v,1606233687,verilog,,D:/final/2Way_Through/MainMemory.v,,Cache,,,,,,,,
+D:/final/2Way_Through/MainMemory.v,1606227799,verilog,,D:/final/2Way_Through/Testbench.v,,MainMemory,,,,,,,,
+D:/final/2Way_Through/Testbench.v,1606233841,verilog,,,,Testbench,,,,,,,,

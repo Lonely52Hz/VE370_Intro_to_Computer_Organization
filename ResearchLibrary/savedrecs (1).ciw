@@ -1,0 +1,56 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Huang, GB
+   Zhu, QY
+   Siew, CK
+AF Huang, Guang-Bin
+   Zhu, Qin-Yu
+   Siew, Chee-Kheong
+TI Extreme learning machine: Theory and applications
+SO NEUROCOMPUTING
+LA English
+DT Article; Proceedings Paper
+CT 8th Brazilian Symposium on Neural Networks
+CY SEP 29-OCT 01, 2004
+CL Sao Luis, BRAZIL
+SP Brazilian Comp Soc, Int Neural Network Soc, SIG INNS Brazil Special Interest Grp
+DE feedforward neural networks; back-propagation algorithm; extreme
+   learning machine; support vector machine; real-time learning; random
+   node
+ID MULTILAYER FEEDFORWARD NETWORKS; NEURAL-NETWORKS; CLASSIFICATION;
+   CAPABILITIES
+AB It is clear that the learning speed of feedforward neural networks is in general far slower than required and it has been a major bottleneck in their applications for past decades. Two key reasons behind may be: (1) the slow gradient-based learning algorithms are extensively used to train neural networks, and (2) all the parameters of the networks are tuned iteratively by using such learning algorithms. Unlike these conventional implementations, this paper proposes a new learning algorithm called extreme learning machine (ELM) for single-hidden layer feedforward neural networks (SLFNs) which randomly chooses hidden nodes and analytically determines the output weights of SLFNs. In theory, this algorithm tends to provide good generalization performance at extremely fast learning speed. The experimental results based on a few artificial and real benchmark function approximation and classification problems including very large complex applications show that the new algorithm can produce good generalization performance in most cases and can learn thousands of times faster than conventional popular learning algorithms for feedforward neural networks.(I) (c) 2006 Elsevier B.V. All rights reserved.
+C1 Nanyang Technol Univ, Sch Elect & Elect Engn, Singapore 639798, Singapore.
+RP Huang, GB (corresponding author), Nanyang Technol Univ, Sch Elect & Elect Engn, Nanyang Ave, Singapore 639798, Singapore.
+EM egbhuang@ntu.edu.sg
+RI Siew, CK/A-5082-2011; Huang, Guang-Bin/A-5035-2011
+OI Huang, Guang-Bin/0000-0002-2480-4965
+NR 26
+TC 5862
+Z9 6643
+U1 92
+U2 1083
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0925-2312
+EI 1872-8286
+J9 NEUROCOMPUTING
+JI Neurocomputing
+PD DEC
+PY 2006
+VL 70
+IS 1-3
+BP 489
+EP 501
+DI 10.1016/j.neucom.2005.12.126
+PG 13
+WC Computer Science, Artificial Intelligence
+SC Computer Science
+GA 113MP
+UT WOS:000242602300047
+DA 2020-11-18
+ER
+
+EF

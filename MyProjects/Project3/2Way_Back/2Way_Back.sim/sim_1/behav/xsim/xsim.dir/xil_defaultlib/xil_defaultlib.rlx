@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/final/2Way_Back/2Way_Back.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/final/2Way_Back/Cache_WriteBack_2Way.v,1606230802,verilog,,D:/final/2Way_Back/Memory.v,,Cache_WriteBack_2Way,,,,,,,,
+D:/final/2Way_Back/Memory.v,1606063519,verilog,,D:/final/2Way_Back/test.v,,Memory,,,,,,,,
+D:/final/2Way_Back/test.v,1606230190,verilog,,,,test,,,,,,,,

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov 11 21:18:28 2020
+# Process ID: 19208
+# Current directory: D:/SJTU/2020-2021  FALL/p2_single/single
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20800 D:\SJTU\2020-2021  FALL\p2_single\single\single.xpr
+# Log file: D:/SJTU/2020-2021  FALL/p2_single/single/vivado.log
+# Journal file: D:/SJTU/2020-2021  FALL/p2_single/single\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/SJTU/2020-2021  FALL/p2_single/single/single.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim

@@ -1,0 +1,17 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/test.v,1605240745,verilog,,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/singlecycle.v,test,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALU.v,1605179835,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALUcontrol.v,,ALU,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALUcontrol.v,1604884222,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Control.v,,ALUcontrol,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Control.v,1605069405,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/DataMemory.v,,Control,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/DataMemory.v,1605028705,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMemory.v,,DataMemory,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMem_for_P2_Demo.txt,1603632736,verilog,,,,,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMemory.v,1605241525,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/MUX2_1.v,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMem_for_P2_Demo.txt,InstructionMemory,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/MUX2_1.v,1604883198,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/PC.v,,MUX2_1,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/PC.v,1604884189,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Register.v,,PC,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Register.v,1604884257,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/SignExtend.v,,Register,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/SignExtend.v,1604882611,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/singlecycle.v,,SignExtend,,,,,,,,
+D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/singlecycle.v,1604983435,verilog,,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/test.v,D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALU.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALUcontrol.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Control.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/DataMemory.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMemory.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/PC.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Register.v;D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/SignExtend.v,singlecycle,,,,,,,,

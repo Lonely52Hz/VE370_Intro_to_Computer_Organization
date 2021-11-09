@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../single.srcs/sources_1/new/ALU.v" \
+"../../../../single.srcs/sources_1/new/ALUcontrol.v" \
+"../../../../single.srcs/sources_1/new/Control.v" \
+"../../../../single.srcs/sources_1/new/DataMemory.v" \
+"../../../../single.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../single.srcs/sources_1/new/MUX2_1.v" \
+"../../../../single.srcs/sources_1/new/PC.v" \
+"../../../../single.srcs/sources_1/new/Register.v" \
+"../../../../single.srcs/sources_1/new/SignExtend.v" \
+"../../../../single.srcs/sources_1/new/singlecycle.v" \
+"../../../../single.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

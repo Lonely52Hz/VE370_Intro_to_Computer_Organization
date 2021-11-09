@@ -1,0 +1,21 @@
+TY  - JOUR
+T1  - Machine learning for suicidology: A practical review of exploratory and hypothesis-driven approaches
+AU  - Cox, Christopher R.
+AU  - Moscardini, Emma H.
+AU  - Cohen, Alex S.
+AU  - Tucker, Raymond P.
+JO  - Clinical Psychology Review
+VL  - 82
+SP  - 101940
+PY  - 2020
+DA  - 2020/12/01/
+SN  - 0272-7358
+DO  - https://doi.org/10.1016/j.cpr.2020.101940
+UR  - http://www.sciencedirect.com/science/article/pii/S0272735820301288
+KW  - Machine learning
+KW  - Suicide
+KW  - Suicidal thoughts and behaviors
+KW  - Prediction
+KW  - Structured sparsity
+AB  - Machine learning is being used to discover models to predict the progression from suicidal ideation to action in clinical populations. While quantifiable improvements in prediction accuracy have been achieved over theory-driven efforts, models discovered through machine learning continue to fall short of clinical relevance. Thus, the value of machine learning for reaching this objective is hotly contested. We agree that machine learning, treated as a “black box” approach antithetical to theory-building, will not discover clinically relevant models of suicide. However, such models may be developed through deliberate synthesis of data- and theory-driven approaches. By providing an accessible overview of essential concepts and common methods, we highlight how generalizable models and scientific insight may be obtained by incorporating prior knowledge and expectations to machine learning research, drawing examples from suicidology. We then discuss challenges investigators will face when using machine learning to discover models of low prevalence outcomes, such as suicide.
+ER  - 

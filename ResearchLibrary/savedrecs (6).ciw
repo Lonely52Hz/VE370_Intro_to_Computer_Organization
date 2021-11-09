@@ -1,0 +1,43 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT B
+AU van Hasselt, H
+   Guez, A
+   Silver, D
+AF van Hasselt, Hado
+   Guez, Arthur
+   Silver, David
+GP AAAI
+TI Deep Reinforcement Learning with Double Q-Learning
+SO THIRTIETH AAAI CONFERENCE ON ARTIFICIAL INTELLIGENCE
+LA English
+DT Proceedings Paper
+CT 30th Association-for-the-Advancement-of-Artificial-Intelligence (AAAI)
+   Conference on Artificial Intelligence
+CY FEB 12-17, 2016
+CL Phoenix, AZ
+SP Assoc Advancement Artificial Intelligence
+AB The popular Q-learning algorithm is known to overestimate action values under certain conditions. It was not previously known whether, in practice, such overestimations are common, whether they harm performance, and whether they can generally be prevented. In this paper, we answer all these questions affirmatively. In particular, we first show that the recent DQN algorithm, which combines Q-learning with a deep neural network, suffers from substantial overestimations in some games in the Atari 2600 domain. We then show that the idea behind the Double Q-learning algorithm, which was introduced in a tabular setting, can be generalized to work with large-scale function approximation. We propose a specific adaptation to the DQN algorithm and show that the resulting algorithm not only reduces the observed overestimations, as hypothesized, but that this also leads to much better performance on several games.
+C1 [van Hasselt, Hado; Guez, Arthur; Silver, David] Google DeepMind, London, England.
+RP van Hasselt, H (corresponding author), Google DeepMind, London, England.
+NR 26
+TC 452
+Z9 460
+U1 29
+U2 57
+PU ASSOC ADVANCEMENT ARTIFICIAL INTELLIGENCE
+PI PALO ALTO
+PA 2275 E BAYSHORE RD, STE 160, PALO ALTO, CA 94303 USA
+PY 2016
+BP 2094
+EP 2100
+PG 7
+WC Computer Science, Artificial Intelligence; Computer Science, Theory &
+   Methods; Engineering, Electrical & Electronic
+SC Computer Science; Engineering
+GA BN6JG
+UT WOS:000485474202019
+DA 2020-11-29
+ER
+
+EF

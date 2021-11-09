@@ -1,0 +1,961 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 13 12:10:56 2020
+# Process ID: 11984
+# Current directory: D:/SJTU/2020-2021  FALL/p2_single/single
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9628 D:\SJTU\2020-2021  FALL\p2_single\single\single.xpr
+# Log file: D:/SJTU/2020-2021  FALL/p2_single/single/vivado.log
+# Journal file: D:/SJTU/2020-2021  FALL/p2_single/single\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/SJTU/2020-2021  FALL/p2_single/single/single.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.695 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALUcontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUcontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/MUX2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/SignExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/singlecycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xelab -wto 8c56f28c6ea54e9db4468a558dc35cac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8c56f28c6ea54e9db4468a558dc35cac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.MUX2_1
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.ALUcontrol
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.singlecycle
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.695 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/ALUcontrol.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUcontrol
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/MUX2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/SignExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sources_1/new/singlecycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlecycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+"xelab -wto 8c56f28c6ea54e9db4468a558dc35cac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8c56f28c6ea54e9db4468a558dc35cac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.MUX2_1
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.ALUcontrol
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.singlecycle
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SJTU/2020-2021  FALL/p2_single/single/single.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+==========================================================
+Time:           0, CLK = 0, PC = 0x00000000
+[$s0] = 0x00000000, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000000
+[$t1] = 0x00000000, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          10, CLK = 1, PC = 0x00000004
+[$s0] = 0x00000000, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000000, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          20, CLK = 0, PC = 0x00000004
+[$s0] = 0x00000000, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000000, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          30, CLK = 1, PC = 0x00000008
+[$s0] = 0x00000000, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          40, CLK = 0, PC = 0x00000008
+[$s0] = 0x00000000, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          50, CLK = 1, PC = 0x0000000c
+[$s0] = 0x00000020, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          60, CLK = 0, PC = 0x0000000c
+[$s0] = 0x00000020, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          70, CLK = 1, PC = 0x00000010
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          80, CLK = 0, PC = 0x00000010
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:          90, CLK = 1, PC = 0x00000014
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         100, CLK = 0, PC = 0x00000014
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         110, CLK = 1, PC = 0x00000018
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         120, CLK = 0, PC = 0x00000018
+[$s0] = 0x00000037, [$s1] = 0x00000000, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         130, CLK = 1, PC = 0x0000001c
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         140, CLK = 0, PC = 0x0000001c
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         150, CLK = 1, PC = 0x00000020
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         160, CLK = 0, PC = 0x00000020
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         170, CLK = 1, PC = 0x00000024
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         180, CLK = 0, PC = 0x00000024
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         190, CLK = 1, PC = 0x00000028
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         200, CLK = 0, PC = 0x00000028
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         210, CLK = 1, PC = 0x0000002c
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         220, CLK = 0, PC = 0x0000002c
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         230, CLK = 1, PC = 0x00000030
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         240, CLK = 0, PC = 0x00000030
+[$s0] = 0x00000037, [$s1] = 0x00000057, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         250, CLK = 1, PC = 0x00000034
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         260, CLK = 0, PC = 0x00000034
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0xffffffe9
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         270, CLK = 1, PC = 0x00000038
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         280, CLK = 0, PC = 0x00000038
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         290, CLK = 1, PC = 0x0000003c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         300, CLK = 0, PC = 0x0000003c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         310, CLK = 1, PC = 0x00000040
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         320, CLK = 0, PC = 0x00000040
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         330, CLK = 1, PC = 0x00000044
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         340, CLK = 0, PC = 0x00000044
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         350, CLK = 1, PC = 0x00000048
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         360, CLK = 0, PC = 0x00000048
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000000, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         370, CLK = 1, PC = 0x0000004c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         380, CLK = 0, PC = 0x0000004c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         390, CLK = 1, PC = 0x00000050
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         400, CLK = 0, PC = 0x00000050
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         410, CLK = 1, PC = 0x00000054
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         420, CLK = 0, PC = 0x00000054
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         430, CLK = 1, PC = 0x00000058
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         440, CLK = 0, PC = 0x00000058
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         450, CLK = 1, PC = 0x0000005c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         460, CLK = 0, PC = 0x0000005c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         470, CLK = 1, PC = 0x00000060
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         480, CLK = 0, PC = 0x00000060
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         490, CLK = 1, PC = 0x00000064
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         500, CLK = 0, PC = 0x00000064
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         510, CLK = 1, PC = 0x00000068
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         520, CLK = 0, PC = 0x00000068
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         530, CLK = 1, PC = 0x0000006c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         540, CLK = 0, PC = 0x0000006c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         550, CLK = 1, PC = 0x00000070
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         560, CLK = 0, PC = 0x00000070
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000000
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         570, CLK = 1, PC = 0x00000074
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         580, CLK = 0, PC = 0x00000074
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         590, CLK = 1, PC = 0x0000005c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         600, CLK = 0, PC = 0x0000005c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000001, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         610, CLK = 1, PC = 0x00000060
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         620, CLK = 0, PC = 0x00000060
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         630, CLK = 1, PC = 0x00000064
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         640, CLK = 0, PC = 0x00000064
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         650, CLK = 1, PC = 0x00000068
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         660, CLK = 0, PC = 0x00000068
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         670, CLK = 1, PC = 0x0000006c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         680, CLK = 0, PC = 0x0000006c
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         690, CLK = 1, PC = 0x000000ac
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         700, CLK = 0, PC = 0x000000ac
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         710, CLK = 1, PC = 0x000000b0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         720, CLK = 0, PC = 0x000000b0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         730, CLK = 1, PC = 0x000000b4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         740, CLK = 0, PC = 0x000000b4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         750, CLK = 1, PC = 0x000000b8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         760, CLK = 0, PC = 0x000000b8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         770, CLK = 1, PC = 0x000000bc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         780, CLK = 0, PC = 0x000000bc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         790, CLK = 1, PC = 0x000000c0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         800, CLK = 0, PC = 0x000000c0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         810, CLK = 1, PC = 0x000000c4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         820, CLK = 0, PC = 0x000000c4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         830, CLK = 1, PC = 0x000000c8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         840, CLK = 0, PC = 0x000000c8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         850, CLK = 1, PC = 0x000000cc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         860, CLK = 0, PC = 0x000000cc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         870, CLK = 1, PC = 0x000000d0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         880, CLK = 0, PC = 0x000000d0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         890, CLK = 1, PC = 0x000000d4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         900, CLK = 0, PC = 0x000000d4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         910, CLK = 1, PC = 0x000000d8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         920, CLK = 0, PC = 0x000000d8
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         930, CLK = 1, PC = 0x000000dc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         940, CLK = 0, PC = 0x000000dc
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         950, CLK = 1, PC = 0x000000e0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         960, CLK = 0, PC = 0x000000e0
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         970, CLK = 1, PC = 0x000000e4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+==========================================================
+Time:         980, CLK = 0, PC = 0x000000e4
+[$s0] = 0x00000037, [$s1] = 0x00000037, [$s2] = 0x00000037
+[$s3] = 0x00000020, [$s4] = 0x00000000, [$s5] = 0x00000000
+[$s6] = 0x00000000, [$s7] = 0x00000000, [$t0] = 0x00000020
+[$t1] = 0x00000037, [$t2] = 0x00000000, [$t3] = 0x00000000
+[$t4] = 0x00000000, [$t5] = 0x00000000, [$t6] = 0x00000000
+[$t7] = 0x00000000, [$t8] = 0x00000000, [$t9] = 0x00000000
+$stop called at time : 1 us : File "D:/SJTU/2020-2021  FALL/p2_single/single/single.srcs/sim_1/new/test.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1024.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 12:14:42 2020...

@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/final/Direct_Back/Cache_writeback.v,1606282464,verilog,,D:/final/Direct_Back/Memory.v,,cache_writeback,,,,,,,,
+D:/final/Direct_Back/Direct_Back.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/final/Direct_Back/Memory.v,1606224219,verilog,,D:/final/Direct_Back/testbench.v,,Memory,,,,,,,,
+D:/final/Direct_Back/testbench.v,1606224251,verilog,,,,test,,,,,,,,

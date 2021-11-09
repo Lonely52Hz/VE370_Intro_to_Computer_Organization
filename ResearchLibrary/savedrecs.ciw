@@ -1,0 +1,50 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT S
+AU Dalal, N
+   Triggs, B
+BE Schmid, C
+   Soatto, S
+   Tomasi, C
+TI Histograms of oriented gradients for human detection
+SO 2005 IEEE COMPUTER SOCIETY CONFERENCE ON COMPUTER VISION AND PATTERN
+   RECOGNITION, VOL 1, PROCEEDINGS
+SE IEEE Conference on Computer Vision and Pattern Recognition
+BP 886
+EP 893
+DI 10.1109/cvpr.2005.177
+PD 2005
+PY 2005
+AB We study the question of feature sets for robust visual object
+   recognition, adopting linear SVM based human detection as a test case.
+   After reviewing existing edge and gradient based descriptors, we show
+   experimentally that grids of Histograms of Oriented Gradient (HOG)
+   descriptors significantly outperform existing feature sets for human
+   detection. We study the influence of each stage of the computation on
+   performance, concluding that fine-scale gradients, fine orientation
+   binning, relatively coarse spatial binning, and high-quality local
+   contrast normalization in overlapping descriptor blocks are all
+   important for good results. The new approach gives near-perfect
+   separation on the original MIT pedestrian database, so we introduce a
+   more challenging dataset containing over 1800 annotated human images
+   with a large range of pose variations and backgrounds.
+CT Conference on Computer Vision and Pattern Recognition
+CY JUN 20-25, 2005
+CL San Diego, CA
+SP IEEE Comp Soc
+ZR 13
+ZS 15
+ZA 0
+Z8 795
+TC 11943
+ZB 429
+Z9 12676
+U1 107
+U2 650
+SN 1063-6919
+BN 0-7695-2372-2
+UT WOS:000230923100119
+PM 8512154
+ER
+
+EF

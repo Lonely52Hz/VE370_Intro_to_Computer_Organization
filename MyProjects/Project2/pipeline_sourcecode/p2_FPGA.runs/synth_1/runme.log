@@ -1,0 +1,365 @@
+
+*** Running vivado
+    with args -log display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source display.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source display.tcl -notrace
+Command: synth_design -top display -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17280
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1030.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_N_bit' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/counter_N_bit.v:1]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_N_bit' (1#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/counter_N_bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/DFF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (2#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/DFF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (3#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ring_counter_4bit' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ring_counter_4bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_N_bit__parameterized0' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/counter_N_bit.v:1]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_N_bit__parameterized0' (3#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/counter_N_bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2to4' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2to4' (4#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ring_counter_4bit' (5#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ring_counter_4bit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/pipeline.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (6#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory_Bonus' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/InstructionMemory_Bonus.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory_Bonus' (7#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/InstructionMemory_Bonus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IFID' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/IFID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IFID' (8#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/IFID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (9#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register' (10#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SignExtend' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/SignExtend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtend' (11#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/SignExtend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX3' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MUX3.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MUX3.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'MUX3' (12#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MUX3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IDEX' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/IDEX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IDEX' (13#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/IDEX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALUControl.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALUControl.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (14#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALUControl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALU.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (15#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EXMEM' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/EXMEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EXMEM' (16#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/EXMEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (17#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/DataMemory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MEMWB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB' (18#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MEMWB.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Forwarding.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (19#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Forwarding.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetection' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/HazardDetection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetection' (20#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/HazardDetection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (21#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/pipeline.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SSD' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/SSD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SSD' (22#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/SSD.v:1]
+WARNING: [Synth 8-567] referenced signal 'ReadDataEx' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:37]
+WARNING: [Synth 8-567] referenced signal 'PCout' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:37]
+WARNING: [Synth 8-567] referenced signal 'Cathode3' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode2' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode1' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode0' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode7' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode6' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode5' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+WARNING: [Synth 8-567] referenced signal 'Cathode4' should be on the sensitivity list [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'display' (23#1) [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1030.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1030.297 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/constrs_1/new/implementation.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_clk_IBUF'. [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/constrs_1/new/implementation.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/constrs_1/new/implementation.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/constrs_1/new/implementation.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/constrs_1/new/implementation.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1059.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1059.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'y0_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'y1_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'y2_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'y3_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/decoder_2to4.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'regdst_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'bne_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'beq_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'memread_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'memwrite_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'regwrite_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUop_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/Control.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/MUX3.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'control_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALUControl.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/ALU.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'CA_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'CB_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'CC_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'CD_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'CE_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:52]
+WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'CG_reg' [C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.srcs/sources_1/new/display.v:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               18 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	  31 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 4     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 54    
+	   9 Input    1 Bit        Muxes := 10    
+	   4 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------+-----------+----------------------+----------------+
+|display     | pcpu/regsiter/regs_reg | Implied   | 32 x 32              | RAM32M x 18	   | 
+|display     | pcpu/dm/memory_reg     | Implied   | 32 x 32              | RAM32X1S x 32	 | 
++------------+------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------+-----------+----------------------+----------------+
+|display     | pcpu/regsiter/regs_reg | Implied   | 32 x 32              | RAM32M x 18	   | 
+|display     | pcpu/dm/memory_reg     | Implied   | 32 x 32              | RAM32X1S x 32	 | 
++------------+------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |    52|
+|3     |LUT1     |    12|
+|4     |LUT2     |   103|
+|5     |LUT3     |   136|
+|6     |LUT4     |    71|
+|7     |LUT5     |   135|
+|8     |LUT6     |   146|
+|9     |MUXF7    |    16|
+|10    |RAM32M   |    18|
+|11    |RAM32X1S |    32|
+|12    |FDRE     |   348|
+|13    |LD       |    44|
+|14    |LDC      |     2|
+|15    |LDCP     |     2|
+|16    |IBUF     |     9|
+|17    |OBUF     |    11|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 1059.816 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1059.816 ; gain = 29.520
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1062.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1062.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 98 instances were transformed.
+  LD => LDCE: 44 instances
+  LDC => LDCE: 2 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 18 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 34 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1062.789 ; gain = 32.492
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ZWK/Desktop/pipeline_sourcecode/p2_FPGA.runs/synth_1/display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file display_utilization_synth.rpt -pb display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 13:25:03 2020...

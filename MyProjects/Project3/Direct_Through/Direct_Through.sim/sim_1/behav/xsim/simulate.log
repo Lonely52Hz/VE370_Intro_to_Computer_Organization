@@ -1,0 +1,40 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+=======================================================================
+Miss!
+Input: Read/Write = 0, Address = 10'b0000000000
+Output: ReadData = 0xae252530, Hit/Miss = 0
+=======================================================================
+Input: Read/Write = 1, Address = 10'b0000000000, WriteData = 0xff
+Output: ReadData = 0xae252530, Hit/Miss = 1
+=======================================================================
+Input: Read/Write = 0, Address = 10'b0000000000
+Output: ReadData = 0xff252530, Hit/Miss = 1
+=======================================================================
+Check main memory: Memory[0] = 0xff252530
+                   Memory[1] = 0xfbe41ea3
+                   Memory[2] = 0xe4f9c495
+                   Memory[3] = 0xa19d33d0
+=======================================================================
+Miss!
+Input: Read/Write = 0, Address = 10'b1000000000
+Output: ReadData = 0xc1bfa705, Hit/Miss = 0
+=======================================================================
+Miss!
+Input: Read/Write = 0, Address = 10'b0000000000
+Output: ReadData = 0xff252530, Hit/Miss = 0
+=======================================================================
+Miss!
+Input: Read/Write = 0, Address = 10'b1100000000
+Output: ReadData = 0x63666b92, Hit/Miss = 0
+=======================================================================
+Miss!
+Input: Read/Write = 0, Address = 10'b1000000000
+Output: ReadData = 0xc1bfa705, Hit/Miss = 0
+=======================================================================
+Check main memory: Memory[0] = 0xff252530
+                   Memory[1] = 0xfbe41ea3
+                   Memory[2] = 0xe4f9c495
+                   Memory[3] = 0xa19d33d0
+=======================================================================
+$stop called at time : 90 ns : File "D:/final/Direct_Through/test.v" Line 63

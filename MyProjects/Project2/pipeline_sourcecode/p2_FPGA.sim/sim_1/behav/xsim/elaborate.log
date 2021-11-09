@@ -1,0 +1,30 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 9a21f4aa967847b0bbebd93c4f45ac1e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'ReadRegEx' is not connected on this instance [C:/Users/Karl Zhang/Desktop/VE370/Project Source Code/pipeline_source code/p2_FPGA.srcs/sim_1/new/sim.v:5]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.InstructionMemory_Bonus
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.MUX3
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.Forwarding
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.pipeline
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav

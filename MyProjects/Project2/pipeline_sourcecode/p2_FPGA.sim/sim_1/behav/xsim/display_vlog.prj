@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../p2_FPGA.srcs/sources_1/new/ALU.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/ALUControl.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/Control.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/DFF.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/DataMemory.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/EXMEM.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/Forwarding.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/HazardDetection.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/IDEX.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/IFID.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/InstructionMemory_Bonus.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/MEMWB.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/MUX3.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/PC.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/Register.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/SSD.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/SignExtend.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/counter_N_bit.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/decoder_2to4.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/divider.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/pipeline.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/ring_counter_4bit.v" \
+"../../../../p2_FPGA.srcs/sources_1/new/display.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
